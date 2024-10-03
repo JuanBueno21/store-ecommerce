@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Store Ecommerce
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es una tienda de comercio electrónico que permite a los usuarios explorar diferentes productos, añadirlos a sus favoritos y ver los detalles de cada uno. El proyecto está desarrollado con React y utiliza una API externa para obtener los productos.
 
-## Available Scripts
+## Características
 
-In the project directory, you can run:
+- **Visualización de productos:** La página principal muestra una galería de tarjetas (cards) con productos disponibles, cada una con información relevante como el título, precio y categoría.
 
-### `npm start`
+- **Favoritos:** Los usuarios pueden añadir productos a su lista de favoritos haciendo clic en el icono de corazón que aparece en cada tarjeta.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Detalles del producto:** Al hacer clic en cualquier tarjeta de producto, el usuario es dirigido a una página que muestra los detalles completos del producto seleccionado.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Navegación:** El proyecto utiliza NavLink para gestionar la navegación entre diferentes páginas como “Inicio” y “Favoritos”.
 
-### `npm test`
+- **Consumo de API:** Los productos que se muestran en la página se obtienen de una API externa.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Gestión de estado:** Se usa useContext y useState para gestionar el estado global de los productos favoritos y los detalles del producto.
 
-### `npm run build`
+- **Estilos CSS personalizados:** Cada componente tiene un diseño atractivo y responsivo, con estilos definidos en archivos CSS dedicados.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Iconos:** Se utilizan iconos como parte de la UI, incluyendo el icono de corazón para indicar los productos favoritos.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Tecnologías utilizadas
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **React:** Framework principal utilizado para construir la interfaz de usuario.er.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **React Router:** Utilizado para la navegación entre las páginas del proyecto mediante NavLink.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **React Router:** Utilizado para la navegación entre las páginas del proyecto mediante NavLink.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **CSS:** Para los estilos personalizados que brindan un diseño limpio y responsivo.
 
-## Learn More
+- **Heroicons:** Biblioteca de iconos utilizada en el proyecto, especialmente para el icono de favoritos.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **API externa:** Para obtener la información de los productos mostrados en la tienda.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Pagina web
 
-### Code Splitting
+[store-ecommerce-jb.netlify.app](https://store-ecommerce-jb.netlify.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
