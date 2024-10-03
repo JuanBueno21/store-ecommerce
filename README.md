@@ -28,7 +28,7 @@ Este proyecto es una tienda de comercio electrónico que permite a los usuarios 
 
 - **React Router:** Utilizado para la navegación entre las páginas del proyecto mediante NavLink.
 
-- **React Router:** Utilizado para la navegación entre las páginas del proyecto mediante NavLink.
+- **useState y useContext:** Hooks utilizados para la gestión del estado de los favoritos y el producto seleccionado.
 
 - **CSS:** Para los estilos personalizados que brindan un diseño limpio y responsivo.
 
