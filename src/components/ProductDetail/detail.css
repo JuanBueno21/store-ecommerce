@@ -1,0 +1,114 @@
+.product-detail {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  max-height: 800px;
+  top: 330px;
+  right: 0;
+  padding: 16px;
+  position: fixed;
+  border: 1px solid rgb(170, 170, 170);
+  border-radius: 15px;
+  background-color: white;
+  margin-right: 15px;
+  margin-top: 60px;
+  overflow-y: auto;
+}
+
+.detail {
+  display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0px;
+  width: 100%;
+}
+
+.detail-image {
+  max-width: 200px;
+  align-self: center;
+}
+
+
+.stock {
+  font-weight: bold;
+  /* color: green; */
+}
+
+.category {
+  font-weight: bold;
+}
+
+.close-detail svg {
+  width: 50px;
+  height: 50px;
+  color: black;
+  margin-right: 10px;
+}
+
+.price-discount-container {
+  display: flex;
+  gap: 10px;
+  height: 60px;
+}
+
+.price-discount-detail {
+  color: red;
+  font-size: 18px;
+  display: flex;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 22px;
+}
+
+.price-detail {
+  font-size: 35px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  text-align: left;
+  width: 100%;
+  /* Asegura que el texto ocupe el 100% del contenedor */
+}
+
+.hidden {
+  display: none;
+}
+
+.rating {
+  display: flex;
+  /* Asegúrate de que el contenedor sea flexible */
+  align-items: center;
+  /* Alinea verticalmente los elementos */
+  margin-bottom: 0px;
+}
+
+.icon-bg {
+  background-color: yellow;
+  /* Cambia este color según tus necesidades */
+  border-radius: 50%;
+  /* Redondear los bordes para un efecto circular */
+  padding: 3px;
+  /* Añadir espacio alrededor del icono */
+}
+
+.rating p {
+  margin-right: 8px;
+  /* Espacio a la derecha del texto */
+}
+
+.icon-available {
+  width: 20px;
+}
+
+.stock-icon-container {
+  display: flex;
+  gap: 8px;
+}
+.icon-available{
+  color: rgb(0, 219, 0);
+}
