@@ -16,7 +16,7 @@ function Favorite() {
         <div>
           <BsBox2HeartFill className="icon-container" />
         </div>
-        <p className="message-container" > Do not have favorite products.</p>
+        <p className="message-container"> Do not have favorite products.</p>
       </div>
   } else {
     isEmpty = (
@@ -31,7 +31,6 @@ function Favorite() {
       <div className="main-container">
         <div>
           <div className="logo">
-
           </div>
         </div>
         <nav className="navbar-container">
@@ -43,12 +42,14 @@ function Favorite() {
         </nav>
       </div>
 
-      <div className="favorite-title">
-        Favorite Products
-      </div>
+      <div className="container">
+        <div className="favorite-title">
+          Favorite Products
+        </div>
 
-      <div className="card-container-favorite">
-        {isEmpty}
+        <div className="card-container-favorite">
+          {isEmpty}
+        </div>
       </div>
 
       {/* {isEmpty
