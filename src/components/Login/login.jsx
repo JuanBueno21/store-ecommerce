@@ -1,34 +1,57 @@
 import React from 'react'
 import "./login.css"
+import { NavLink } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div className="form-container">
-      <div className="form-card">
-        <h2 className="form-title">Login</h2>
-        <form>
 
-          <div className="form-group">
-            <label htmlFor="email">Email address</label>
-            <input id="email" type="email" className="form-control" />
+    <>
+      {/* NAVBAR TO GO AT HOME */}
+      <div>
+        <div className="main-container">
+          <div>
+            <div className="logo">
+            </div>
           </div>
-
-          <div className="form-group">
-            <label htmlFor="password" name="">Password</label>
-            <input id="password" type="password" className="form-control" />
-          </div>
-
-          <button type="submit" className="btn btn-primary btn-submit">
-            Login
-          </button>
-
-          <button type="button" className="btn btn-secondary btn-cancel">
-            Cancel
-          </button>
-
-        </form>
+          <nav className="navbar-container">
+            <ul className="navbar">
+              <li className="navbar-home">
+                <NavLink to="/" > Home</NavLink>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
+
+      {/* LOGIN AUTHENTICATION*/}
+      <div className="form-container">
+        <div className="form-card">
+          <h2 className="form-title">Login</h2>
+          <form>
+
+            <div className="form-group">
+              <label htmlFor="email">Email address</label>
+              <input id="email" type="email" className="form-control" />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="password" name="">Password</label>
+              <input id="password" type="password" className="form-control" />
+            </div>
+
+            <button type="submit" className="btn btn-primary btn-submit">
+              Login
+            </button>
+
+            <button type="button" className="btn btn-secondary btn-cancel">
+              Cancel
+            </button>
+
+          </form>
+        </div>
+      </div>
+
+    </>
   )
 }
 
