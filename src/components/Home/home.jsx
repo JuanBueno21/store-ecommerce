@@ -3,8 +3,6 @@ import Card from "../Card/Card";
 import Navbar from "../Navbar/navbar";
 import ProductDetail from "../ProductDetail/detail";
 import "./home.css";
-import { PhoneIcon } from '@heroicons/react/24/solid'
-
 
 function Home() {
   const [products, setProducts] = useState([]);

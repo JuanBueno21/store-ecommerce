@@ -30,7 +30,6 @@ const ProductDetail = () => {
         </div>
 
         <div>
-
           <div className='stock-icon-container'>
             <p className='stock'> Stock available: {productShow.stock}</p>
             <CheckBadgeIcon className='icon-available' />
@@ -45,7 +44,6 @@ const ProductDetail = () => {
             <BiStar className="icon-bg" />
             <BiStar className="icon-bg" />
           </div>
-
         </div>
 
       </div>
