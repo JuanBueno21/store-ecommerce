@@ -5,7 +5,6 @@ import "../ProductDetail/detail.css";
 import { FavotitesContext } from "../context/context";
 import { HeartIcon } from '@heroicons/react/24/outline'
 
-
 const Card = ({ data, showDescription, isFavorite }) => {
   const context = useContext(FavotitesContext);
   const { title, description, images, price, category, discountPercentage } = data;
@@ -34,7 +33,6 @@ const Card = ({ data, showDescription, isFavorite }) => {
       context.setFavoritesProducts([...context.favoritesProducts, item]);
     }
   }
-
 
   return (
     <div

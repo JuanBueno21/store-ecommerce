@@ -1,6 +1,7 @@
 import "./favorite.css";
 import Card from "../Card/Card";
 import { useContext } from "react";
+import logo from '../assets/logo.jpeg';
 import { NavLink } from "react-router-dom";
 import { FavotitesContext } from "../context/context";
 import { BsBox2HeartFill } from "react-icons/bs";
@@ -29,9 +30,8 @@ function Favorite() {
   return (
     <>
       <div className="main-container">
-        <div>
-          <div className="logo">
-          </div>
+        <div className="logo">
+          <img src={logo} alt="Logo" className="logo" />
         </div>
         <nav className="navbar-container">
           <ul className="navbar">

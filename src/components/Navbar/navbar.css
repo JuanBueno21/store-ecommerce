@@ -8,14 +8,15 @@ html {
 .main-container {
   display: flex;
   justify-content: space-between;
-  background-color: #c9c9c9;
+  background-color: #c9c8c8;
   font-size: 60px;
   align-items: center;
 }
 
 .logo {
-  width: 300px;
-  margin-left: 20px;
+  display: flex;
+  width: 380px;
+  margin-left: 15px;
 }
 
 .navbar-container {
@@ -41,6 +42,10 @@ html {
 
 .header-container {
   display: flex;
+  background: linear-gradient(180deg, rgba(201, 200, 200, 1) 50%, rgba(221, 220, 220, 1) 70%, rgba(255, 255, 255, 1) 100%);
+
+
+
 }
 
 .heart {

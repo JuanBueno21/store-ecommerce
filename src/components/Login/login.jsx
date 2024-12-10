@@ -1,28 +1,26 @@
 import React from 'react'
 import "./login.css"
 import { NavLink } from "react-router-dom";
+import logo from '../assets/logo.jpeg';
 
 const Login = () => {
   return (
 
     <>
-      {/* NAVBAR TO GO AT HOME */}
-      <div>
-        <div className="main-container">
-          <div>
-            <div className="logo">
-            </div>
-          </div>
-          <nav className="navbar-container">
-            <ul className="navbar">
-              <li className="navbar-home">
-                <NavLink to="/" > Home</NavLink>
-              </li>
-            </ul>
-          </nav>
+      <div className="main-container">
+        {/* LOGO */}
+        <div className="logo">
+          <img src={logo} alt="Logo" className="logo" />
         </div>
+        {/* NAVBAR TO GO AT HOME */}
+        <nav className="navbar-container">
+          <ul className="navbar">
+            <li className="navbar-home">
+              <NavLink to="/" > Home</NavLink>
+            </li>
+          </ul>
+        </nav>
       </div>
-
       {/* LOGIN AUTHENTICATION*/}
       <div className="form-container">
         <div className="form-card">
@@ -50,7 +48,6 @@ const Login = () => {
           </form>
         </div>
       </div>
-
     </>
   )
 }

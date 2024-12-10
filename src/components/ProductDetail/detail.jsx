@@ -1,7 +1,5 @@
 import { XCircleIcon } from '@heroicons/react/24/solid'
 import { CheckBadgeIcon } from '@heroicons/react/24/solid'
-
-
 import { FavotitesContext } from "../context/context";
 import { useContext } from 'react';
 import "./detail.css";
