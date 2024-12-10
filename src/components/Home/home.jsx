@@ -3,15 +3,20 @@ import Card from "../Card/Card";
 import Navbar from "../Navbar/navbar";
 import ProductDetail from "../ProductDetail/detail";
 import "./home.css";
+import { PhoneIcon } from '@heroicons/react/24/solid'
 
 
 function Home() {
   const [products, setProducts] = useState([]);
 
-
   useEffect(() => {
     fetch("https://dummyjson.com/products?limit=194")
-      .then(response => response.json())
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
       .then(data => { setProducts(data.products) }
       );
   }, []);
@@ -29,9 +34,21 @@ function Home() {
       </div>
 
       <ProductDetail />
-      <footer className="footer">
-        Thank you for visited my page.
-      </footer>
+
+      <div className="footer-container">
+        <p className="message">Thank you for visiting my page.</p>
+        <section className="contact-section">
+          <h2>Contact Us</h2>
+          <div className="contact-info">
+            <p>
+              <strong>Call Us:</strong> +(57) 321-435-6591
+            </p>
+            <p>
+              <strong>Email Us:</strong> galvezjuancamilo@gmail.com
+            </p>
+          </div>
+        </section>
+      </div>
 
     </>
   );
